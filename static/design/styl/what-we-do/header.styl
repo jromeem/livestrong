@@ -1,0 +1,1544 @@
+/* Header Specific Styles
+=========================================================== */
+#navigation { 
+	background $yellow
+	position fixed
+	font-size 16px
+	z-index 20
+	width 100%
+	height 60px
+	top 0
+	margin 0
+	ul {
+		margin 0
+		padding 0
+		position static
+		> li {
+			list-style-type none
+			position static
+			color $black
+			padding 0
+			margin 0
+			> a {
+				text-decoration none
+				font-size 0.75em
+				outline none
+				border none
+			}
+		}
+	}
+	#nav-container {
+		position static
+	}
+	.js-dropdown-trigger {
+		.js-toggle-subnav {
+			FontAwesome()
+			padding 0
+			outline none
+			display none
+			&:hover, &:focus {
+				box-shadow none
+				outline none
+				border none
+			}
+		}
+	}
+	.nav__tier--1 {
+		position static
+		> li {
+			transition background 300ms ease-in-out
+			position static
+			float left
+			margin 0
+			padding 0
+			> a {
+				text-transform uppercase
+				HelveticaBold()
+				line-height 60px
+				padding 0 12px
+				display block
+				height 60px
+				&:hover {
+					color $black
+				}
+			}
+			&:last-child {
+				margin 0
+			}
+			.nav__tier--2 {
+				-moz-box-shadow -5px 4px 10px -5px rgba(0,0,0,0.3)
+				box-shadow -5px 4px 10px -5px rgba(0,0,0,0.3)
+				position absolute
+				background white
+				z-index 1001
+				display none
+				padding 21px 21px 21px 0
+				width 100%				
+				top 60px
+				left 0
+				.separator {
+					padding 0
+					margin 0
+					&:before {
+						border-right 1px solid #d9d9d9
+						margin 0 28px 0 21px
+						min-height 150px
+						max-height 200px
+						float right
+						content ' '
+					}
+				}
+				.row {
+					max-width 996px
+					padding 0
+					margin 0 auto
+					width 100%
+					clear both
+				}
+				.global-nav-feature {
+					img {
+						display block
+						margin 9px auto 15px
+					}
+					.global-nav-feature__caption {
+						h6 {
+							HelveticaBold()
+							text-transform uppercase
+							margin 0 0 9px
+							font-size 0.75rem
+							color $black
+						}
+						p {
+							Helvetica()
+							color $megaMenuCopy
+							font-size 0.75rem
+							margin 0 0 1.25rem
+						}
+						.livestrong-border {
+							HelveticaBold()
+							color $megaMenuCopy
+							border-color $megaMenuCopy
+							text-transform uppercase
+							font-size 0.6888rem
+							padding 12px
+							&:hover,&:focus {
+								background $black
+								border-color $black
+								color $white
+							}
+						}
+					}
+				}
+				.nav__tier--2-container {
+					> ul {
+						> li {
+							> a {
+								HelveticaBold()
+								font-size 0.75em
+								line-height 1.3
+								color black
+								display block
+								margin 15px 0 12px
+								text-transform uppercase
+							}
+						}
+					}
+					.connect-links {
+						> li {
+							> a {
+								width 30px
+								height 30px
+								display block
+								border 1px solid $megaMenuCopy
+								-moz-border-radius 100%
+								border-radius 100%
+								line-height 30px
+								margin 0 auto 12px
+								FontAwesome()
+								color $megaMenuCopy
+								text-align center
+								font-size 1em
+								&:hover {
+									color $black_gray
+									border-color $black_gray
+								}
+							}
+						}
+					}
+				}
+				.nav__tier--3 {
+					> li {
+						> a {
+							line-height 1.3
+							margin 0 0 9px
+							display block
+							color $megaMenuCopy
+							&:hover, &:focus {
+								color #373737
+							}
+						}
+					}
+				}
+			}
+			&:hover {
+				transition background 300ms ease-in-out
+				.nav__tier--2 {
+					display block
+				}
+			}
+		}
+	}
+	#logo {
+		float left
+		position static
+		margin 0 21px 0 0
+		background none
+		padding 0
+		height 25px
+		.ls-logo-container {
+			margin 20px 0 0 0
+			a {
+				display block
+				line-height 25px
+				width 195px
+				height 14px
+				overflow hidden
+				text-indent -9999em
+				background url('../img/logo-bar.png') no-repeat
+				img {
+					max-width 100%
+				}
+			}
+		}
+		.separator {
+			padding 0 42px 0 0
+			margin 0
+			height 100%
+			margin 0
+		}
+	}
+	#nav-links {
+		position static
+		margin 0 auto
+		.nav__tier--1 {
+			position static
+			> li {
+				position static
+				margin 0
+				> a {
+					text-align center
+				}
+				&.active, &:hover {
+					background $megaMenuActiveBg
+				}
+			}
+		}
+	}
+	#nav-utitlities {
+		float right
+		position static
+		.nav__tier--1 {
+			> li {
+				&#global-search-container {
+					position relative
+					z-index 1
+					height 60px
+					#global-search {
+						margin 15px 36px 0 0
+						.separator {
+							padding 0 0 0 6px
+							border-left 1px solid black
+						}
+						.active-menu-obscure {
+							background $yellow
+							height 60px
+							width 0
+							position absolute
+							left 0
+							top 0
+							-webkit-backface-visibility: hidden;
+							visibility hidden
+							display inline-block
+							vertical-align middle
+							transition width 900ms ease-out, left 900ms ease-out
+							#q {
+								margin 14px 0 0
+								border 1px solid white
+								box-shadow none
+								font-size 0.875em
+								MetroLite-LT-Two-Regular()
+								width 100%
+								line-height 25px
+								height 25px
+								padding-top 0
+								padding-bottom 0
+							}
+						}
+						#global-search-submit {
+							background transparent
+							border-radius 3px
+							line-height 1
+							outline none
+							color black
+							border none
+							height 25px
+							width 33px
+							padding 0
+							font-size 1rem
+							FontAwesome()
+							&:hover {
+								background black
+								color white
+							}
+						}
+						&:hover,&:focus {
+							.active-menu-obscure {
+								width 500px
+								left -501px
+								-webkit-backface-visibility: visible;
+								visibility visible
+								#q {
+									width 100%
+								}
+							}
+							#global-search-submit {
+								background black
+								color white
+							}
+						}
+						.input-group-btn {
+							width auto
+						}
+					}
+					&.focused {
+						#global-search {
+							.active-menu-obscure {
+								width 500px
+								left -501px
+								-webkit-backface-visibility: visible;
+								visibility visible
+								#q {
+									width 100%
+								}
+							}
+							#global-search-submit {
+								background black
+								color white
+							}
+						}
+					}
+				}
+				&#global-login {
+					position relative
+					z-index 2
+					margin-right 9px
+					#global-login-form {
+						display none
+						background white
+						position absolute
+						padding 21px 15px 6px
+						width 237px
+						left -75px
+						border-bottom-left-radius 3px
+						border-bottom-right-radius 3px
+						.form-group {
+							.form-control {
+								&.livestrong-input {
+									width auto
+								}
+							}
+						}
+						.spinner-overlay {
+							display none
+							position absolute
+							top 0
+							left 0
+							margin auto
+							height 100%
+							width 100%
+							background rgba(0,0,0,0.3)
+							.spinner {
+								text-align center
+								margin 30% auto 0
+								display block
+								height 60px
+								width 60px
+								border-radius 4px
+								background $white
+								&:before {
+									FontAwesome()
+									font-size 2em
+									line-height 60px
+									content '\f110'
+									display block
+									text-align center
+									-webkit-animation spinner 1s linear 0s infinite normal
+									-moz-animation spinner 1s linear 0s infinite normal
+									-o-animation spinner 1s linear 0s infinite normal
+									animation spinner 1s linear 0s infinite normal
+								}
+							}
+						}
+						&.processing {
+							.spinner-overlay {
+								display block
+							}
+						}
+					}
+					.livestrong-btn {
+						Sentinel-SSm-Medium()
+					}
+					.form-group {
+						margin-bottom 21px
+						position relative
+						> ul {
+							> li {
+								margin-bottom 6px
+								padding 0
+							}
+						}
+					}
+					&:hover,&:focus,&.focused {
+						> a {
+							background $megaMenuActiveBg
+						}
+						#global-login-form {
+							display block
+							-webkit-box-shadow 0 1px 10px -3px rgba(0,0,0,0.3)
+							box-shadow 0 1px 10px -3px rgba(0,0,0,0.3)
+						}
+					}
+				}
+				&#user-options {
+					z-index 2
+					height 60px
+					line-height 60px
+					margin-right 9px
+					position relative
+					.generic-avatar {
+						FontAwesome()
+						font-size 1.65em
+						width 30px
+						height 30px
+						line-height 39px
+						color $megaMenuActiveBg
+						background black
+						border-radius 100%
+						text-align center
+						margin 15px 24px 0 0
+						padding 0
+						display block
+						overflow hidden
+						img {
+							max-width 100%
+							max-height 100%
+						}
+					}
+					.nav__tier--2 {
+						width 225px
+						left -75px
+						padding 0
+						border-bottom-left-radius 3px
+						border-bottom-right-radius 3px
+						.nav__tier--2-container {
+							> ul {
+								> li {
+									padding 0 21px
+									border-bottom 1px solid #cac9c9
+									&:last-child {
+										border-bottom none
+									}
+									&#manage,&#message-center {
+										> a {
+											&:before {
+												FontAwesome()
+												margin-right 9px
+											}
+										}
+									}
+									&#manage {
+										> a {
+											&:before {
+												content '\f234'
+											}
+										}
+									}
+									&#message-center {
+										> a {
+											&:before {
+												content '\f003'
+											}
+										}
+									}
+									> a {
+										Helvetica()
+										text-transform none
+										color $megaMenuCopy
+									}
+								}
+							}
+						}
+					}
+				}
+				&#global-donate {
+					z-index 2
+					height 60px
+					line-height 60px
+					position relative
+					> a {
+						HelveticaBold()
+						height auto
+						line-height 1rem
+						margin 12px auto 0
+						padding 9px 12px
+						&.btn {
+							font-size 0.75em
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Main Content
+================================================== */
+#main-article {
+	background white
+	#logo-mobile {
+		backface-visibility hidden
+		background $yellow
+		position fixed
+		width 100%
+		height 60px
+		margin 0
+		.ls-expose-nav-container {
+			float right
+			.js-mobile-nav-trigger {
+				font-size 2em
+				padding 0
+				height 60px
+				line-height 30px
+				border none
+				outline none
+				color black
+				background transparent
+				FontAwesome()
+				&:hover,&:focus {
+					text-decoration none
+				}
+			}
+		}
+		.ls-logo-container {
+			margin 0
+			a {
+				display block
+				line-height 25px
+				img {
+					max-width 100%
+				}
+			}
+		}
+	}
+}
+
+/* Section Specific Stuff
+================================================== */
+.get-help {
+	#navigation {
+		z-index 20000
+		#nav-links {
+			.nav__tier--1 {
+				> li {
+					&#nav-gethelp {
+						background $megaMenuActiveBg
+					}
+				}
+			}
+		}
+	}
+}
+.what-we-do,.programs-map__view {
+	#navigation {
+		#nav-links {
+			.nav__tier--1 {
+				> li {
+					&#nav-whatwedo {
+						background $megaMenuActiveBg
+					}
+				}
+			}
+		}
+	}
+}
+.who-we-are {
+	#navigation {
+		#nav-links {
+			.nav__tier--1 {
+				> li {
+					&#nav-whoweare {
+						background $megaMenuActiveBg
+					}
+				}
+			}
+		}
+	}
+}
+.donate {
+	#navigation {
+		#nav-links {
+			.nav__tier--1 {
+				> li {
+					&#nav-donate {
+						background $megaMenuActiveBg
+					}
+				}
+			}
+		}
+	}
+}
+.take-action,.events,.cfgrid-view {
+	#navigation {
+		#nav-links {
+			.nav__tier--1 {
+				> li {
+					&#nav-takeaction {
+						background $megaMenuActiveBg
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Hacks Hacks and More Hacks
+================================================== */
+.no-bootstrap {
+	&.generic {
+		#navigation {
+			#logo {
+				height 60px
+				width auto
+				left 0
+				top 0
+				text-indent 0
+				overflow auto
+			}
+			.nav__tier--1 {
+				> li {
+					> a {
+						&:hover {
+							color $black
+							text-decoration none
+						}
+					}
+				}
+			}
+		}
+	}
+	&.generic,
+	&.donate,
+	&.who-we-are,
+	&.take-action,
+	&.search,
+	&.what-we-do,
+	&.get-help,
+	&.add-profile,
+	&.contact-management,
+	&.accounts,
+	&.events,
+	&.event-detail,
+	&.fundraise,
+	&.register-event,
+	&.profile,
+	&.cfgrid-view,
+	&.programs-map__view,
+	&.programs-resource__view {
+		#navigation {
+			top 0
+			.wrapper {
+				max-width 980px
+				min-width 0
+				.wrapper__content {
+					margin-left 0
+					margin-right 15px
+				}
+			}
+			.nav__tier--1 {
+				> li {
+					.nav__tier--2 {
+						.row {
+							max-width 996px
+							min-width 0
+							.row {
+								min-width 1px
+								max-width 100%
+							}
+						}
+						figure {
+							figcaption {
+								line-height 1.5
+							}
+						}
+					}
+				}
+			}
+			#nav-utitlities {
+				.nav__tier--1 {
+					> li {
+						&#global-search-container {
+							#global-search {
+								&:hover,&:focus {
+									.active-menu-obscure {
+										width 520px
+										left -521px
+									}
+								}
+							}
+							&.focused {
+								#global-search {
+									.active-menu-obscure {
+										width 520px
+										left -521px
+									}
+								}
+							}
+						}
+						&#user-options {
+							.nav__tier--2 {
+								.row {
+									min-width 1px
+								}
+							}
+						}
+						&#global-donate {
+							> a {
+								&.btn {
+									margin -3px auto 0
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.wrapper {
+			margin-top 0
+		}
+	}
+	&.donate,
+	&.who-we-are,
+	&.take-action {
+		#container {
+			> .wrapper {
+				margin-top 60px
+				max-width 100%
+				width 100%
+				padding 0
+			}
+		}
+	}
+	&.search {
+		#container {
+			> .wrapper {
+				margin-top 102px
+			}
+		}
+	}
+	&.what-we-do {
+	    &.research-page {
+	        #navigation { 
+	        	& + #marquee {
+        	    	margin-top 60px
+        	    }
+        	}
+        }
+	}
+	&.add-profile,
+	&.profile {
+		#navigation {
+        	& + #marquee {
+    	    	margin-top 60px
+    	    }
+			#nav-utitlities {
+				.nav__tier--1 {
+					> li {
+						&#global-search-container {
+							#global-search {
+								#global-search-submit {
+									min-width 1px
+									width 33px !important
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.contact-management,
+	&.accounts,
+	&.profile {
+		#navigation {
+        	& + #marquee {
+    	    	margin-top 60px
+    	    	& + #page-head {
+	    	    	margin-top 21px
+    	    	}
+    	    }
+		}
+	}
+	&.events,
+	&.event-detail,
+	&.fundraise,
+	&.register-event {
+		#cta-bar {
+			background $white
+		}
+		.is-sticky {
+			.sticky-sidebar,.sticky-goal,#cf-form-sidebar {
+				margin-top 60px
+			}
+		}
+		#navigation {
+			top 0
+        	& + #marquee {
+    	    	margin-top 60px
+    	    }
+			#nav-utitlities {
+				.nav__tier--1 {
+					> li {
+						&#global-search-container {
+							#global-search {
+								#global-search-submit {
+									min-width 1px
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.profile {
+		&.edit {
+			#navigation {
+				form {
+					width auto
+				}
+				#nav-utitlities {
+					.nav__tier--1 {
+						> li {
+							&#global-search-container {
+								#global-search {
+									.separator {
+										height 25px
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.search-results,
+	&.search {
+		#navigation {
+			.wrapper {
+				zoom 1
+				padding-top 0
+			}
+			#nav-utitlities {
+				.nav__tier--1 {
+					> li {
+						&#global-donate {
+							> a {
+								background $black
+								color $white
+								&:hover,&:focus {
+									background $white
+									color $black
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.get-help {
+		&.main,&.theme {
+			#navigation {
+				.wrapper {
+					max-width 976px
+					min-width 0
+					.wrapper__content {
+						margin-left 0
+						margin-right 15px
+					}
+				}
+			}
+		}
+		&.article {
+			#navigation {
+				#logo {
+					max-width 230px
+					height 60px
+				}
+			}
+		}
+	}
+	&.events,
+	&.event-detail,
+	&.add-profile {
+		#navigation {
+			#logo {
+				max-width 230px
+				height 60px
+			}
+			#nav-utitlities {
+				.nav__tier--1 {
+					> li {
+						&#global-search-container {
+							#global-search {
+								margin 15px 15px 0 0
+							}
+						}
+						&#global-donate {
+							> a {
+								background $black
+								color $white
+								&:hover,&:focus {
+									background $white
+									color $black
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.cfgrid-view {
+		#navigation {
+			.wrapper {
+				max-width 971px
+				.wrapper__content {
+					margin-right 0
+				}
+			}
+			#nav-utitlities {
+				.nav__tier--1 {
+					> li {
+						&#global-login {
+							#global-login-form {
+								width 194px
+								left -61px
+								.form-group {
+									.form-control {
+										&.livestrong-input {
+											width 87%
+										}
+									}
+									.livestrong-btn {
+										background $yellow
+										&:hover {
+											background $black
+										}
+									}
+								}
+							}
+						}
+						&#user-options {
+							.nav__tier--2 {
+								width 212px
+								left -61px
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.cfgrid-view,
+	&.programs-resource__view {
+		#sticky-parent {
+			position relative
+			z-index 19
+		}
+		#navigation {
+			#logo {
+				max-width 230px
+				height 60px
+			}
+			#nav-utitlities {
+				.nav__tier--1 {
+					> li {
+						&#global-search-container {
+							#global-search {
+								margin 15px 0 0 0
+								#global-search-submit {
+									min-width 1px
+								}
+								&:hover,&:focus,&.focused {
+									.active-menu-obscure {
+										left -547px
+									}
+								}
+							}
+						}
+						&#global-donate {
+							> a {
+								background $black
+								color $white
+								&:hover,&:focus {
+									background $white
+									color $black
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		#content {
+			&.cfgrid-view__content {
+				#cfgrid-view__filters-sticky-wrapper {
+					&.is-sticky {
+						#cfgrid-view__filters {
+							margin-top 42px
+						}
+					}
+				}
+			}
+		}
+	}
+	&.programs-map__view {
+		#navigation {
+			#nav-utitlities {
+				.nav__tier--1 {
+					> li {
+						&#global-search-container {
+							#global-search {
+								&:hover,&:focus,&.focused {
+									.active-menu-obscure {
+										left -547px
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.programs-resource__view {
+		#navigation {
+			#logo {
+				max-width 100%
+			}
+			#nav-utitlities {
+				.nav__tier--1 {
+					> li {
+						&#global-search-container {
+							#global-search {
+								margin 15px 33px 0 0
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Bootstrap Pollyfills
+=========================================================== */
+//So this is unnecessary when we have all the templates using bootstrap
+.no-bootstrap {
+	#navigation {
+		.row {
+			clear both
+		}
+		.col-md-1 {
+			width 8.33333333%
+			float left
+		}
+		.col-md-2 {
+			width 15%
+			float left
+		}
+		.col-md-3 {
+			width 25%
+			float left
+		}
+		.col-md-4 {
+			width 33.333333333%
+			float left
+		}
+		.col-md-6 {
+			width 50%
+			float left
+		}
+		.col-md-8 {
+		    width 66.66666667%
+		    float left
+		}
+		.col-md-9 {
+			width 75%
+			float left
+		}
+		.glyphicon {
+		    position relative
+		    top 1px
+		    display inline-block
+		    line-height 1
+		    -webkit-font-smoothing antialiased
+		    -moz-osx-font-smoothing grayscale
+		    FontAwesome()
+		}
+		.form-control-feedback {
+		    position absolute
+		    top 0
+		    right 0
+		    z-index 2
+		    display block
+		    width 34px
+		    height 34px
+		    line-height 34px
+		    text-align center
+		    pointer-events none
+		}
+		.form-control {
+			display block
+			width 87%
+			height 20px
+			padding 6px 12px
+			line-height 1.42857143
+			color #555
+			background-color #fff
+			background-image none
+			border 1px solid #ccc
+			box-shadow inset 0 0 20px rgba(0,0,0,.12)
+			Sentinel-Light()
+			font-size 1.125em
+			-webkit-transition border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s
+			-o-transition border-color ease-in-out .15s,box-shadow ease-in-out .15s
+			transition border-color ease-in-out .15s,box-shadow ease-in-out .15s
+		}
+		.has-error .form-control {
+		    border-color #a94442
+		    -webkit-box-shadow inset 0 1px 1px rgba(0,0,0,.075)
+		    box-shadow inset 0 1px 1px rgba(0,0,0,.075)
+		}
+		.has-success .form-control {
+		    border-color #3c763d
+		    -webkit-box-shadow inset 0 1px 1px rgba(0,0,0,.075)
+		    box-shadow inset 0 1px 1px rgba(0,0,0,.075)
+		}
+		.has-error .form-control-feedback {
+		    color #a94442
+		}
+		.has-success .form-control-feedback {
+		    color #3c763d
+		}
+		.glyphicon-remove:before {
+		    content "\f00d"
+		    box-sizing border-box
+		}
+		.glyphicon-ok:before {
+		    content "\f00c"
+		    box-sizing border-box
+		}
+		.text-right {
+		    text-align right
+		}
+		.btn {
+		    display inline-block
+		    padding 6px 12px
+		    margin-bottom 0
+		    font-size 14px
+		    font-weight 400
+		    line-height 1.42857143
+		    text-align center
+		    white-space nowrap
+		    vertical-align middle
+		    -ms-touch-action manipulation
+		    touch-action manipulation
+		    cursor pointer
+		    -webkit-user-select none
+		    -moz-user-select none
+		    -ms-user-select none
+		    user-select none
+		    background-image none
+		    border 1px solid transparent
+		    border-radius 3px
+		}
+		.js-dropdown-trigger {
+			.js-toggle-subnav {
+				display none
+			}
+		}
+		.nav__tier--1 {
+			> li {
+				.nav__tier--2 {
+					.separator {
+						&:before {
+							margin 0 28px 0 21px
+						}
+					}
+				}
+			}
+		}
+		#nav-utitlities {
+			.nav__tier--1 {
+				> li {
+					&#global-login {
+						#global-login-form {
+							width 207px
+							left -75px
+						}
+						.form-group {
+							margin-bottom 15px
+							position relative
+							> ul {
+								> li {
+									margin-bottom 0
+									padding 0
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.input-group-btn {
+		    position relative
+		    font-size 0
+		    white-space nowrap
+		}
+		.input-group-addon, .input-group-btn {
+		    width 1%
+		    white-space nowrap
+		    vertical-align middle
+		}
+	// End remove when bootstrap is present
+	}
+}
+
+@media (max-width: 1023px)
+	body,html {
+		&.bootstrap {
+			min-width 0
+		}
+	}
+	.bootstrap {
+		.wrapper {
+			.wrapper__content {
+				margin-left 0
+				margin-right 0
+			}
+		}
+		#navigation {
+			#nav-utitlities {
+				#global-search-container {
+					#global-search {
+						margin 15px 18px 0 0
+					}
+				}
+				#user-options {
+					.nav__tier--2 {
+						width 181px
+						left -58px
+						padding 0
+					}
+				}
+			}
+		}
+		#main-article {
+			#logo-mobile {
+				margin-left 0
+			}
+		}
+	}
+
+@media (max-width: 992px)
+	.bootstrap {
+		#navigation {
+			position fixed
+			z-index 1
+			width 266px
+			height 100%
+			top 0
+			right 0
+			transition-property top, bottom
+			transition-duration .2s, .2s
+			transition-timing-function linear, linear
+			-webkit-overflow-scrolling touch
+			.js-dropdown-trigger {
+				> .js-toggle-subnav {
+					width 33%
+					float right
+					padding 15px 0
+					display block
+					& + a {
+						width 66%
+						float left
+						text-align left
+					}
+				}
+			}
+			.nav__tier--1 {
+				clear both
+				> li {
+					clear both
+					margin 0
+					width 100%
+					border-top 1px solid rgba(112, 112, 112, 0.3)
+					> a {
+						line-height 1.3
+						height auto
+						float left
+						padding 15px 0
+						margin 0
+						&:hover,&:focus {
+							background transparent
+						}
+					}
+					.nav__tier--2 {
+						clear both
+						background transparent
+						position static
+						display none
+						padding 0
+						width auto				
+						top 0
+						left 0
+						width 100%
+						.row {
+							max-width 100%
+						}
+						.nav__tier--2-container {
+							> ul {
+								width 100%
+								clear both
+								> li {
+									clear both
+									margin 0
+									width 100%
+									padding-left 1em
+									border-top 1px solid rgba(112, 112, 112, 0.3)
+									> a {
+										padding 15px 0
+										float left
+										margin 0
+									}
+								}
+							}
+						}
+						.nav__tier--3 {
+							clear both
+							width 100%
+							display none
+							> li {
+								clear both
+								margin 0
+								width 100%
+								padding-left 1em
+								border-top 1px solid rgba(112, 112, 112, 0.3)
+								> a {
+									padding 15px 0
+									margin 0
+									color black
+								}
+							}
+						}
+					}
+					&:hover {
+						.nav__tier--2 {
+							display none
+						}
+					}
+				}
+			}
+			#logo, #nav-links, #nav-utitlities {
+				float none
+				padding 0
+				margin 0 0 18px
+				position static
+			}
+			#logo {
+				height auto
+				.ls-logo-container {
+					margin 10
+					a {
+						line-height normal
+					}
+				}
+				.separator {
+					border-right none
+					padding 0
+					margin 0
+					height auto
+				}
+			}
+			#nav-utitlities {
+				.nav__tier--1 {
+					> li {
+						&#global-search-container {
+							position relative
+							border-top none
+							#global-search {
+								margin 0
+								padding 0
+								border-left none
+								#q {
+									display inline
+									position static
+									left 0
+									top 0
+									padding 0 10px
+									width inherit
+									opacity 1
+									visibility visible
+									vertical-align middle
+									transition none
+								}
+								#global-search-submit {
+									&:hover {
+										background black
+										color white
+									}
+								}
+								&:hover, .search-focus {
+									#q {
+										width auto
+										left 0
+										opacity 1
+										visibility visible
+									}
+									#global-search-submit {
+										&:hover {
+											background black
+											color white
+										}
+									}
+								}
+							}
+							.input-group-btn {
+								width 1%
+								display inline
+							}
+						}
+						&#global-login {
+							position relative
+							&:hover, &:focus {
+								> a {
+									background transparent
+								}
+								#global-login-form {
+									display none
+								}
+							}
+							#global-login-form {
+								display none
+								clear both
+								position static
+								padding 15px 12px 1px
+								margin-bottom 15px
+								width auto
+								left 0
+							}
+						}
+						&#user-options {
+							height auto
+							line-height normal
+							.generic-avatar {
+								margin 9px 0 0
+							}
+							.nav__tier--2 {
+								width auto
+								left 0
+								padding 0
+								.nav__tier--2-container {
+									> ul {
+										> li {
+											padding-left 1em
+											border-bottom none
+											border-top 1px solid rgba(112, 112, 112, 0.3)
+											&#manage,&#message-center {
+												> a {
+													&:before {
+														FontAwesome()
+														margin-right 9px
+													}
+												}
+											}
+											&#manage {
+												> a {
+													&:before {
+														content '\f234'
+													}
+												}
+											}
+											&#message-center {
+												> a {
+													&:before {
+														content '\f003'
+													}
+												}
+											}
+											> a {
+												color black
+												padding 15px 0
+											}
+										}
+									}
+								}
+							}
+						}
+						&#global-donate {
+							&.js-dropdown-trigger {
+								background transparent
+								> a {
+									background transparent
+									&:hover {
+										background transparent
+									}
+								}
+								&.active, &:hover {
+									background transparent
+								}
+							}
+						}
+					}
+				}
+			}
+			#nav-links {
+				.nav__tier--1 {
+					> li {
+						> a {
+							text-align left
+						}
+						&.active, &:hover {
+							background transparent
+						}
+					}
+				}
+			}
+		}
+		#main-article {
+			position absolute
+			width 100%
+			height auto
+			z-index 2
+			background white
+			#logo-mobile {
+				width 100%
+				margin 0
+				z-index 5
+				padding 18px 15px 0
+			}
+		}
+	}
