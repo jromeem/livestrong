@@ -1,0 +1,29 @@
+.donation__module {
+  padding: 7.025em 0 7.088em;
+}
+.donation__module h4 {
+  font-size: 1.625em;
+  line-height: 1.3;
+  margin: 0 0 0.75em;
+}
+.donation__module p {
+  font-size: 1.125em;
+  line-height: 1.3;
+  margin: 0 0 1.5em;
+}
+.donation__module img {
+  border-radius: 3px;
+}
+.donation__module .donate-buttons {
+  margin-left: 0;
+  padding-left: 0;
+}
+.donation__module .donate-buttons li {
+  list-style-type: none;
+  margin: 0 0.75em 0 0;
+  padding: 0;
+  float: left;
+}
+.donation__module .donate-buttons li .btn {
+  font-size: 1.25em;
+}

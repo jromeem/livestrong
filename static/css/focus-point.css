@@ -1,0 +1,74 @@
+.focus-point__figure {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.focus-point__figure .img__container,
+.focus-point__figure .img__container--hover {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 100%;
+  margin: 0 auto 1.5em;
+  text-align: center;
+}
+.focus-point__figure .img__container .hover-expose,
+.focus-point__figure .img__container--hover .hover-expose {
+  transition: all 600ms ease-in-out;
+  background: rgba(0,0,0,0.35);
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+  padding: 1.5em 1em 1em;
+  top: 0;
+}
+.focus-point__figure .img__container .hover-expose h5,
+.focus-point__figure .img__container--hover .hover-expose h5 {
+  font-size: 3.75em;
+  line-height: 1.3;
+  color: $yellow;
+  margin: 0 auto 0.005em;
+  text-align: center;
+}
+.focus-point__figure .img__container .hover-expose p,
+.focus-point__figure .img__container--hover .hover-expose p {
+  font-size: 1.313em;
+  line-height: 1.3;
+  text-align: center;
+  color: $white;
+}
+.focus-point__figure .img__container img,
+.focus-point__figure .img__container--hover img {
+  width: 100%;
+}
+.focus-point__figure .img__container--hover:hover img {
+  filter: blur(1px);
+}
+.focus-point__figure .img__container--hover:hover .hover-expose {
+  transition: all 600ms ease-in-out;
+  visibility: visible;
+  opacity: 1;
+}
+.focus-point__figure .focus-point__caption h4 {
+  font-size: 1.25em;
+  line-height: 1.3;
+  margin: 0 auto 0.688em;
+  text-align: center;
+}
+.focus-point__figure .focus-point__caption p {
+  font-size: 1em;
+  line-height: 1.3;
+  text-align: center;
+  color: $smoke;
+}
+.focus-point__figure .focus-point__caption .livestrong-nochrome {
+  font-size: 1.125em;
+}
+.focus-point__figure .focus-point__caption .livestrong-nochrome:hover {
+  color: $black;
+}

@@ -1,0 +1,1382 @@
+/* Header Specific Styles
+=========================================================== */
+#navigation {
+  background: $yellow;
+  position: fixed;
+  font-size: 16px;
+  z-index: 20;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  margin: 0;
+}
+#navigation ul {
+  margin: 0;
+  padding: 0;
+  position: static;
+}
+#navigation ul > li {
+  list-style-type: none;
+  position: static;
+  color: $black;
+  padding: 0;
+  margin: 0;
+}
+#navigation ul > li > a {
+  text-decoration: none;
+  font-size: 0.75em;
+  outline: none;
+  border: none;
+}
+#navigation #nav-container {
+  position: static;
+}
+#navigation .js-dropdown-trigger .js-toggle-subnav {
+  padding: 0;
+  outline: none;
+  display: none;
+}
+#navigation .js-dropdown-trigger .js-toggle-subnav:hover,
+#navigation .js-dropdown-trigger .js-toggle-subnav:focus {
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+#navigation .nav__tier--1 {
+  position: static;
+}
+#navigation .nav__tier--1 > li {
+  transition: background 300ms ease-in-out;
+  position: static;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#navigation .nav__tier--1 > li > a {
+  text-transform: uppercase;
+  line-height: 60px;
+  padding: 0 12px;
+  display: block;
+  height: 60px;
+}
+#navigation .nav__tier--1 > li > a:hover {
+  color: $black;
+}
+#navigation .nav__tier--1 > li:last-child {
+  margin: 0;
+}
+#navigation .nav__tier--1 > li .nav__tier--2 {
+  -moz-box-shadow: -5px 4px 10px -5px rgba(0,0,0,0.3);
+  box-shadow: -5px 4px 10px -5px rgba(0,0,0,0.3);
+  position: absolute;
+  background: #fff;
+  z-index: 1001;
+  display: none;
+  padding: 21px 21px 21px 0;
+  width: 100%;
+  top: 60px;
+  left: 0;
+}
+#navigation .nav__tier--1 > li .nav__tier--2 .separator {
+  padding: 0;
+  margin: 0;
+}
+#navigation .nav__tier--1 > li .nav__tier--2 .separator:before {
+  border-right: 1px solid #d9d9d9;
+  margin: 0 28px 0 21px;
+  min-height: 150px;
+  max-height: 200px;
+  float: right;
+  content: ' ';
+}
+#navigation .nav__tier--1 > li .nav__tier--2 .row {
+  max-width: 996px;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  clear: both;
+}
+#navigation .nav__tier--1 > li .nav__tier--2 .global-nav-feature img {
+  display: block;
+  margin: 9px auto 15px;
+}
+#navigation .nav__tier--1 > li .nav__tier--2 .global-nav-feature .global-nav-feature__caption h6 {
+  text-transform: uppercase;
+  margin: 0 0 9px;
+  font-size: 0.75rem;
+  color: $black;
+}
+#navigation .nav__tier--1 > li .nav__tier--2 .global-nav-feature .global-nav-feature__caption p {
+  color: $megaMenuCopy;
+  font-size: 0.75rem;
+  margin: 0 0 1.25rem;
+}
+#navigation .nav__tier--1 > li .nav__tier--2 .global-nav-feature .global-nav-feature__caption .livestrong-border {
+  color: $megaMenuCopy;
+  border-color: $megaMenuCopy;
+  text-transform: uppercase;
+  font-size: 0.6888rem;
+  padding: 12px;
+}
+#navigation .nav__tier--1 > li .nav__tier--2 .global-nav-feature .global-nav-feature__caption .livestrong-border:hover,
+#navigation .nav__tier--1 > li .nav__tier--2 .global-nav-feature .global-nav-feature__caption .livestrong-border:focus {
+  background: $black;
+  border-color: $black;
+  color: $white;
+}
+#navigation .nav__tier--1 > li .nav__tier--2 .nav__tier--2-container > ul > li > a {
+  font-size: 0.75em;
+  line-height: 1.3;
+  color: #000;
+  display: block;
+  margin: 15px 0 12px;
+  text-transform: uppercase;
+}
+#navigation .nav__tier--1 > li .nav__tier--2 .nav__tier--2-container .connect-links > li > a {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border: 1px solid $megaMenuCopy;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  line-height: 30px;
+  margin: 0 auto 12px;
+  color: $megaMenuCopy;
+  text-align: center;
+  font-size: 1em;
+}
+#navigation .nav__tier--1 > li .nav__tier--2 .nav__tier--2-container .connect-links > li > a:hover {
+  color: $black_gray;
+  border-color: $black_gray;
+}
+#navigation .nav__tier--1 > li .nav__tier--2 .nav__tier--3 > li > a {
+  line-height: 1.3;
+  margin: 0 0 9px;
+  display: block;
+  color: $megaMenuCopy;
+}
+#navigation .nav__tier--1 > li .nav__tier--2 .nav__tier--3 > li > a:hover,
+#navigation .nav__tier--1 > li .nav__tier--2 .nav__tier--3 > li > a:focus {
+  color: #373737;
+}
+#navigation .nav__tier--1 > li:hover {
+  transition: background 300ms ease-in-out;
+}
+#navigation .nav__tier--1 > li:hover .nav__tier--2 {
+  display: block;
+}
+#navigation #logo {
+  float: left;
+  position: static;
+  margin: 0 21px 0 0;
+  background: none;
+  padding: 0;
+  height: 25px;
+}
+#navigation #logo .ls-logo-container {
+  margin: 20px 0 0 0;
+}
+#navigation #logo .ls-logo-container a {
+  display: block;
+  line-height: 25px;
+  width: 195px;
+  height: 14px;
+  overflow: hidden;
+  text-indent: -9999em;
+  background: url("../img/logo-bar.png") no-repeat;
+}
+#navigation #logo .ls-logo-container a img {
+  max-width: 100%;
+}
+#navigation #logo .separator {
+  padding: 0 42px 0 0;
+  margin: 0;
+  height: 100%;
+  margin: 0;
+}
+#navigation #nav-links {
+  position: static;
+  margin: 0 auto;
+}
+#navigation #nav-links .nav__tier--1 {
+  position: static;
+}
+#navigation #nav-links .nav__tier--1 > li {
+  position: static;
+  margin: 0;
+}
+#navigation #nav-links .nav__tier--1 > li > a {
+  text-align: center;
+}
+#navigation #nav-links .nav__tier--1 > li.active,
+#navigation #nav-links .nav__tier--1 > li:hover {
+  background: $megaMenuActiveBg;
+}
+#navigation #nav-utitlities {
+  float: right;
+  position: static;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-search-container {
+  position: relative;
+  z-index: 1;
+  height: 60px;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search {
+  margin: 15px 36px 0 0;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search .separator {
+  padding: 0 0 0 6px;
+  border-left: 1px solid #000;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search .active-menu-obscure {
+  background: $yellow;
+  height: 60px;
+  width: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-backface-visibility: hidden;
+  visibility: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  transition: width 900ms ease-out, left 900ms ease-out;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search .active-menu-obscure #q {
+  margin: 14px 0 0;
+  border: 1px solid #fff;
+  box-shadow: none;
+  font-size: 0.875em;
+  width: 100%;
+  line-height: 25px;
+  height: 25px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search #global-search-submit {
+  background: transparent;
+  border-radius: 3px;
+  line-height: 1;
+  outline: none;
+  color: #000;
+  border: none;
+  height: 25px;
+  width: 33px;
+  padding: 0;
+  font-size: 1rem;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search #global-search-submit:hover {
+  background: #000;
+  color: #fff;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+#navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure {
+  width: 500px;
+  left: -501px;
+  -webkit-backface-visibility: visible;
+  visibility: visible;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure #q,
+#navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure #q {
+  width: 100%;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover #global-search-submit,
+#navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus #global-search-submit {
+  background: #000;
+  color: #fff;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search .input-group-btn {
+  width: auto;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure {
+  width: 500px;
+  left: -501px;
+  -webkit-backface-visibility: visible;
+  visibility: visible;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure #q {
+  width: 100%;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search #global-search-submit {
+  background: #000;
+  color: #fff;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-login {
+  position: relative;
+  z-index: 2;
+  margin-right: 9px;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-login #global-login-form {
+  display: none;
+  background: #fff;
+  position: absolute;
+  padding: 21px 15px 6px;
+  width: 237px;
+  left: -75px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-login #global-login-form .form-group .form-control.livestrong-input {
+  width: auto;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-login #global-login-form .spinner-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.3);
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-login #global-login-form .spinner-overlay .spinner {
+  text-align: center;
+  margin: 30% auto 0;
+  display: block;
+  height: 60px;
+  width: 60px;
+  border-radius: 4px;
+  background: $white;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-login #global-login-form .spinner-overlay .spinner:before {
+  font-size: 2em;
+  line-height: 60px;
+  content: '\f110';
+  display: block;
+  text-align: center;
+  -webkit-animation: spinner 1s linear 0s infinite normal;
+  -moz-animation: spinner 1s linear 0s infinite normal;
+  -o-animation: spinner 1s linear 0s infinite normal;
+  animation: spinner 1s linear 0s infinite normal;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-login #global-login-form.processing .spinner-overlay {
+  display: block;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-login .form-group {
+  margin-bottom: 21px;
+  position: relative;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-login .form-group > ul > li {
+  margin-bottom: 6px;
+  padding: 0;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-login:hover > a,
+#navigation #nav-utitlities .nav__tier--1 > li#global-login:focus > a,
+#navigation #nav-utitlities .nav__tier--1 > li#global-login.focused > a {
+  background: $megaMenuActiveBg;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-login:hover #global-login-form,
+#navigation #nav-utitlities .nav__tier--1 > li#global-login:focus #global-login-form,
+#navigation #nav-utitlities .nav__tier--1 > li#global-login.focused #global-login-form {
+  display: block;
+  -webkit-box-shadow: 0 1px 10px -3px rgba(0,0,0,0.3);
+  box-shadow: 0 1px 10px -3px rgba(0,0,0,0.3);
+}
+#navigation #nav-utitlities .nav__tier--1 > li#user-options {
+  z-index: 2;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 9px;
+  position: relative;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#user-options .generic-avatar {
+  font-size: 1.65em;
+  width: 30px;
+  height: 30px;
+  line-height: 39px;
+  color: $megaMenuActiveBg;
+  background: #000;
+  border-radius: 100%;
+  text-align: center;
+  margin: 15px 24px 0 0;
+  padding: 0;
+  display: block;
+  overflow: hidden;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#user-options .generic-avatar img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 {
+  width: 225px;
+  left: -75px;
+  padding: 0;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .nav__tier--2-container > ul > li {
+  padding: 0 21px;
+  border-bottom: 1px solid #cac9c9;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .nav__tier--2-container > ul > li:last-child {
+  border-bottom: none;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .nav__tier--2-container > ul > li#manage > a:before,
+#navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .nav__tier--2-container > ul > li#message-center > a:before {
+  margin-right: 9px;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .nav__tier--2-container > ul > li#manage > a:before {
+  content: '\f234';
+}
+#navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .nav__tier--2-container > ul > li#message-center > a:before {
+  content: '\f003';
+}
+#navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .nav__tier--2-container > ul > li > a {
+  text-transform: none;
+  color: $megaMenuCopy;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-donate {
+  z-index: 2;
+  height: 60px;
+  line-height: 60px;
+  position: relative;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-donate > a {
+  height: auto;
+  line-height: 1rem;
+  margin: 12px auto 0;
+  padding: 9px 12px;
+}
+#navigation #nav-utitlities .nav__tier--1 > li#global-donate > a.btn {
+  font-size: 0.75em;
+}
+/* Main Content
+================================================== */
+#main-article {
+  background: #fff;
+}
+#main-article #logo-mobile {
+  backface-visibility: hidden;
+  background: $yellow;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+}
+#main-article #logo-mobile .ls-expose-nav-container {
+  float: right;
+}
+#main-article #logo-mobile .ls-expose-nav-container .js-mobile-nav-trigger {
+  font-size: 2em;
+  padding: 0;
+  height: 60px;
+  line-height: 30px;
+  border: none;
+  outline: none;
+  color: #000;
+  background: transparent;
+}
+#main-article #logo-mobile .ls-expose-nav-container .js-mobile-nav-trigger:hover,
+#main-article #logo-mobile .ls-expose-nav-container .js-mobile-nav-trigger:focus {
+  text-decoration: none;
+}
+#main-article #logo-mobile .ls-logo-container {
+  margin: 0;
+}
+#main-article #logo-mobile .ls-logo-container a {
+  display: block;
+  line-height: 25px;
+}
+#main-article #logo-mobile .ls-logo-container a img {
+  max-width: 100%;
+}
+/* Section Specific Stuff
+================================================== */
+.get-help #navigation {
+  z-index: 20000;
+}
+.get-help #navigation #nav-links .nav__tier--1 > li#nav-gethelp {
+  background: $megaMenuActiveBg;
+}
+.what-we-do #navigation #nav-links .nav__tier--1 > li#nav-whatwedo,
+.programs-map__view #navigation #nav-links .nav__tier--1 > li#nav-whatwedo {
+  background: $megaMenuActiveBg;
+}
+.who-we-are #navigation #nav-links .nav__tier--1 > li#nav-whoweare {
+  background: $megaMenuActiveBg;
+}
+.donate #navigation #nav-links .nav__tier--1 > li#nav-donate {
+  background: $megaMenuActiveBg;
+}
+.take-action #navigation #nav-links .nav__tier--1 > li#nav-takeaction,
+.events #navigation #nav-links .nav__tier--1 > li#nav-takeaction,
+.cfgrid-view #navigation #nav-links .nav__tier--1 > li#nav-takeaction {
+  background: $megaMenuActiveBg;
+}
+/* Hacks Hacks and More Hacks
+================================================== */
+.no-bootstrap.generic #navigation #logo {
+  height: 60px;
+  width: auto;
+  left: 0;
+  top: 0;
+  text-indent: 0;
+  overflow: auto;
+}
+.no-bootstrap.generic #navigation .nav__tier--1 > li > a:hover {
+  color: $black;
+  text-decoration: none;
+}
+.no-bootstrap.generic #navigation,
+.no-bootstrap.donate #navigation,
+.no-bootstrap.who-we-are #navigation,
+.no-bootstrap.take-action #navigation,
+.no-bootstrap.search #navigation,
+.no-bootstrap.what-we-do #navigation,
+.no-bootstrap.get-help #navigation,
+.no-bootstrap.add-profile #navigation,
+.no-bootstrap.contact-management #navigation,
+.no-bootstrap.accounts #navigation,
+.no-bootstrap.events #navigation,
+.no-bootstrap.event-detail #navigation,
+.no-bootstrap.fundraise #navigation,
+.no-bootstrap.register-event #navigation,
+.no-bootstrap.profile #navigation,
+.no-bootstrap.cfgrid-view #navigation,
+.no-bootstrap.programs-map__view #navigation,
+.no-bootstrap.programs-resource__view #navigation {
+  top: 0;
+}
+.no-bootstrap.generic #navigation .wrapper,
+.no-bootstrap.donate #navigation .wrapper,
+.no-bootstrap.who-we-are #navigation .wrapper,
+.no-bootstrap.take-action #navigation .wrapper,
+.no-bootstrap.search #navigation .wrapper,
+.no-bootstrap.what-we-do #navigation .wrapper,
+.no-bootstrap.get-help #navigation .wrapper,
+.no-bootstrap.add-profile #navigation .wrapper,
+.no-bootstrap.contact-management #navigation .wrapper,
+.no-bootstrap.accounts #navigation .wrapper,
+.no-bootstrap.events #navigation .wrapper,
+.no-bootstrap.event-detail #navigation .wrapper,
+.no-bootstrap.fundraise #navigation .wrapper,
+.no-bootstrap.register-event #navigation .wrapper,
+.no-bootstrap.profile #navigation .wrapper,
+.no-bootstrap.cfgrid-view #navigation .wrapper,
+.no-bootstrap.programs-map__view #navigation .wrapper,
+.no-bootstrap.programs-resource__view #navigation .wrapper {
+  max-width: 980px;
+  min-width: 0;
+}
+.no-bootstrap.generic #navigation .wrapper .wrapper__content,
+.no-bootstrap.donate #navigation .wrapper .wrapper__content,
+.no-bootstrap.who-we-are #navigation .wrapper .wrapper__content,
+.no-bootstrap.take-action #navigation .wrapper .wrapper__content,
+.no-bootstrap.search #navigation .wrapper .wrapper__content,
+.no-bootstrap.what-we-do #navigation .wrapper .wrapper__content,
+.no-bootstrap.get-help #navigation .wrapper .wrapper__content,
+.no-bootstrap.add-profile #navigation .wrapper .wrapper__content,
+.no-bootstrap.contact-management #navigation .wrapper .wrapper__content,
+.no-bootstrap.accounts #navigation .wrapper .wrapper__content,
+.no-bootstrap.events #navigation .wrapper .wrapper__content,
+.no-bootstrap.event-detail #navigation .wrapper .wrapper__content,
+.no-bootstrap.fundraise #navigation .wrapper .wrapper__content,
+.no-bootstrap.register-event #navigation .wrapper .wrapper__content,
+.no-bootstrap.profile #navigation .wrapper .wrapper__content,
+.no-bootstrap.cfgrid-view #navigation .wrapper .wrapper__content,
+.no-bootstrap.programs-map__view #navigation .wrapper .wrapper__content,
+.no-bootstrap.programs-resource__view #navigation .wrapper .wrapper__content {
+  margin-left: 0;
+  margin-right: 15px;
+}
+.no-bootstrap.generic #navigation .nav__tier--1 > li .nav__tier--2 .row,
+.no-bootstrap.donate #navigation .nav__tier--1 > li .nav__tier--2 .row,
+.no-bootstrap.who-we-are #navigation .nav__tier--1 > li .nav__tier--2 .row,
+.no-bootstrap.take-action #navigation .nav__tier--1 > li .nav__tier--2 .row,
+.no-bootstrap.search #navigation .nav__tier--1 > li .nav__tier--2 .row,
+.no-bootstrap.what-we-do #navigation .nav__tier--1 > li .nav__tier--2 .row,
+.no-bootstrap.get-help #navigation .nav__tier--1 > li .nav__tier--2 .row,
+.no-bootstrap.add-profile #navigation .nav__tier--1 > li .nav__tier--2 .row,
+.no-bootstrap.contact-management #navigation .nav__tier--1 > li .nav__tier--2 .row,
+.no-bootstrap.accounts #navigation .nav__tier--1 > li .nav__tier--2 .row,
+.no-bootstrap.events #navigation .nav__tier--1 > li .nav__tier--2 .row,
+.no-bootstrap.event-detail #navigation .nav__tier--1 > li .nav__tier--2 .row,
+.no-bootstrap.fundraise #navigation .nav__tier--1 > li .nav__tier--2 .row,
+.no-bootstrap.register-event #navigation .nav__tier--1 > li .nav__tier--2 .row,
+.no-bootstrap.profile #navigation .nav__tier--1 > li .nav__tier--2 .row,
+.no-bootstrap.cfgrid-view #navigation .nav__tier--1 > li .nav__tier--2 .row,
+.no-bootstrap.programs-map__view #navigation .nav__tier--1 > li .nav__tier--2 .row,
+.no-bootstrap.programs-resource__view #navigation .nav__tier--1 > li .nav__tier--2 .row {
+  max-width: 996px;
+  min-width: 0;
+}
+.no-bootstrap.generic #navigation .nav__tier--1 > li .nav__tier--2 .row .row,
+.no-bootstrap.donate #navigation .nav__tier--1 > li .nav__tier--2 .row .row,
+.no-bootstrap.who-we-are #navigation .nav__tier--1 > li .nav__tier--2 .row .row,
+.no-bootstrap.take-action #navigation .nav__tier--1 > li .nav__tier--2 .row .row,
+.no-bootstrap.search #navigation .nav__tier--1 > li .nav__tier--2 .row .row,
+.no-bootstrap.what-we-do #navigation .nav__tier--1 > li .nav__tier--2 .row .row,
+.no-bootstrap.get-help #navigation .nav__tier--1 > li .nav__tier--2 .row .row,
+.no-bootstrap.add-profile #navigation .nav__tier--1 > li .nav__tier--2 .row .row,
+.no-bootstrap.contact-management #navigation .nav__tier--1 > li .nav__tier--2 .row .row,
+.no-bootstrap.accounts #navigation .nav__tier--1 > li .nav__tier--2 .row .row,
+.no-bootstrap.events #navigation .nav__tier--1 > li .nav__tier--2 .row .row,
+.no-bootstrap.event-detail #navigation .nav__tier--1 > li .nav__tier--2 .row .row,
+.no-bootstrap.fundraise #navigation .nav__tier--1 > li .nav__tier--2 .row .row,
+.no-bootstrap.register-event #navigation .nav__tier--1 > li .nav__tier--2 .row .row,
+.no-bootstrap.profile #navigation .nav__tier--1 > li .nav__tier--2 .row .row,
+.no-bootstrap.cfgrid-view #navigation .nav__tier--1 > li .nav__tier--2 .row .row,
+.no-bootstrap.programs-map__view #navigation .nav__tier--1 > li .nav__tier--2 .row .row,
+.no-bootstrap.programs-resource__view #navigation .nav__tier--1 > li .nav__tier--2 .row .row {
+  min-width: 1px;
+  max-width: 100%;
+}
+.no-bootstrap.generic #navigation .nav__tier--1 > li .nav__tier--2 figure figcaption,
+.no-bootstrap.donate #navigation .nav__tier--1 > li .nav__tier--2 figure figcaption,
+.no-bootstrap.who-we-are #navigation .nav__tier--1 > li .nav__tier--2 figure figcaption,
+.no-bootstrap.take-action #navigation .nav__tier--1 > li .nav__tier--2 figure figcaption,
+.no-bootstrap.search #navigation .nav__tier--1 > li .nav__tier--2 figure figcaption,
+.no-bootstrap.what-we-do #navigation .nav__tier--1 > li .nav__tier--2 figure figcaption,
+.no-bootstrap.get-help #navigation .nav__tier--1 > li .nav__tier--2 figure figcaption,
+.no-bootstrap.add-profile #navigation .nav__tier--1 > li .nav__tier--2 figure figcaption,
+.no-bootstrap.contact-management #navigation .nav__tier--1 > li .nav__tier--2 figure figcaption,
+.no-bootstrap.accounts #navigation .nav__tier--1 > li .nav__tier--2 figure figcaption,
+.no-bootstrap.events #navigation .nav__tier--1 > li .nav__tier--2 figure figcaption,
+.no-bootstrap.event-detail #navigation .nav__tier--1 > li .nav__tier--2 figure figcaption,
+.no-bootstrap.fundraise #navigation .nav__tier--1 > li .nav__tier--2 figure figcaption,
+.no-bootstrap.register-event #navigation .nav__tier--1 > li .nav__tier--2 figure figcaption,
+.no-bootstrap.profile #navigation .nav__tier--1 > li .nav__tier--2 figure figcaption,
+.no-bootstrap.cfgrid-view #navigation .nav__tier--1 > li .nav__tier--2 figure figcaption,
+.no-bootstrap.programs-map__view #navigation .nav__tier--1 > li .nav__tier--2 figure figcaption,
+.no-bootstrap.programs-resource__view #navigation .nav__tier--1 > li .nav__tier--2 figure figcaption {
+  line-height: 1.5;
+}
+.no-bootstrap.generic #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.donate #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.who-we-are #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.take-action #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.search #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.what-we-do #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.get-help #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.add-profile #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.contact-management #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.accounts #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.events #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.event-detail #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.fundraise #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.register-event #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.profile #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.cfgrid-view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.programs-map__view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.programs-resource__view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.generic #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.donate #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.who-we-are #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.take-action #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.search #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.what-we-do #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.get-help #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.add-profile #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.contact-management #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.accounts #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.events #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.event-detail #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.fundraise #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.register-event #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.profile #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.cfgrid-view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.programs-map__view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.programs-resource__view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure {
+  width: 520px;
+  left: -521px;
+}
+.no-bootstrap.generic #navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure,
+.no-bootstrap.donate #navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure,
+.no-bootstrap.who-we-are #navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure,
+.no-bootstrap.take-action #navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure,
+.no-bootstrap.search #navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure,
+.no-bootstrap.what-we-do #navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure,
+.no-bootstrap.get-help #navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure,
+.no-bootstrap.add-profile #navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure,
+.no-bootstrap.contact-management #navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure,
+.no-bootstrap.accounts #navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure,
+.no-bootstrap.events #navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure,
+.no-bootstrap.event-detail #navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure,
+.no-bootstrap.fundraise #navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure,
+.no-bootstrap.register-event #navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure,
+.no-bootstrap.profile #navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure,
+.no-bootstrap.cfgrid-view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure,
+.no-bootstrap.programs-map__view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure,
+.no-bootstrap.programs-resource__view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container.focused #global-search .active-menu-obscure {
+  width: 520px;
+  left: -521px;
+}
+.no-bootstrap.generic #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .row,
+.no-bootstrap.donate #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .row,
+.no-bootstrap.who-we-are #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .row,
+.no-bootstrap.take-action #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .row,
+.no-bootstrap.search #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .row,
+.no-bootstrap.what-we-do #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .row,
+.no-bootstrap.get-help #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .row,
+.no-bootstrap.add-profile #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .row,
+.no-bootstrap.contact-management #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .row,
+.no-bootstrap.accounts #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .row,
+.no-bootstrap.events #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .row,
+.no-bootstrap.event-detail #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .row,
+.no-bootstrap.fundraise #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .row,
+.no-bootstrap.register-event #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .row,
+.no-bootstrap.profile #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .row,
+.no-bootstrap.cfgrid-view #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .row,
+.no-bootstrap.programs-map__view #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .row,
+.no-bootstrap.programs-resource__view #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .row {
+  min-width: 1px;
+}
+.no-bootstrap.generic #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a.btn,
+.no-bootstrap.donate #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a.btn,
+.no-bootstrap.who-we-are #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a.btn,
+.no-bootstrap.take-action #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a.btn,
+.no-bootstrap.search #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a.btn,
+.no-bootstrap.what-we-do #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a.btn,
+.no-bootstrap.get-help #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a.btn,
+.no-bootstrap.add-profile #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a.btn,
+.no-bootstrap.contact-management #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a.btn,
+.no-bootstrap.accounts #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a.btn,
+.no-bootstrap.events #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a.btn,
+.no-bootstrap.event-detail #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a.btn,
+.no-bootstrap.fundraise #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a.btn,
+.no-bootstrap.register-event #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a.btn,
+.no-bootstrap.profile #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a.btn,
+.no-bootstrap.cfgrid-view #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a.btn,
+.no-bootstrap.programs-map__view #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a.btn,
+.no-bootstrap.programs-resource__view #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a.btn {
+  margin: -3px auto 0;
+}
+.no-bootstrap.generic .wrapper,
+.no-bootstrap.donate .wrapper,
+.no-bootstrap.who-we-are .wrapper,
+.no-bootstrap.take-action .wrapper,
+.no-bootstrap.search .wrapper,
+.no-bootstrap.what-we-do .wrapper,
+.no-bootstrap.get-help .wrapper,
+.no-bootstrap.add-profile .wrapper,
+.no-bootstrap.contact-management .wrapper,
+.no-bootstrap.accounts .wrapper,
+.no-bootstrap.events .wrapper,
+.no-bootstrap.event-detail .wrapper,
+.no-bootstrap.fundraise .wrapper,
+.no-bootstrap.register-event .wrapper,
+.no-bootstrap.profile .wrapper,
+.no-bootstrap.cfgrid-view .wrapper,
+.no-bootstrap.programs-map__view .wrapper,
+.no-bootstrap.programs-resource__view .wrapper {
+  margin-top: 0;
+}
+.no-bootstrap.donate #container > .wrapper,
+.no-bootstrap.who-we-are #container > .wrapper,
+.no-bootstrap.take-action #container > .wrapper {
+  margin-top: 60px;
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+}
+.no-bootstrap.search #container > .wrapper {
+  margin-top: 102px;
+}
+.no-bootstrap.what-we-do.research-page #navigation + #marquee {
+  margin-top: 60px;
+}
+.no-bootstrap.add-profile #navigation + #marquee,
+.no-bootstrap.profile #navigation + #marquee {
+  margin-top: 60px;
+}
+.no-bootstrap.add-profile #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search #global-search-submit,
+.no-bootstrap.profile #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search #global-search-submit {
+  min-width: 1px;
+  width: 33px !important;
+}
+.no-bootstrap.contact-management #navigation + #marquee,
+.no-bootstrap.accounts #navigation + #marquee,
+.no-bootstrap.profile #navigation + #marquee {
+  margin-top: 60px;
+}
+.no-bootstrap.contact-management #navigation + #marquee + #page-head,
+.no-bootstrap.accounts #navigation + #marquee + #page-head,
+.no-bootstrap.profile #navigation + #marquee + #page-head {
+  margin-top: 21px;
+}
+.no-bootstrap.events #cta-bar,
+.no-bootstrap.event-detail #cta-bar,
+.no-bootstrap.fundraise #cta-bar,
+.no-bootstrap.register-event #cta-bar {
+  background: $white;
+}
+.no-bootstrap.events .is-sticky .sticky-sidebar,
+.no-bootstrap.event-detail .is-sticky .sticky-sidebar,
+.no-bootstrap.fundraise .is-sticky .sticky-sidebar,
+.no-bootstrap.register-event .is-sticky .sticky-sidebar,
+.no-bootstrap.events .is-sticky .sticky-goal,
+.no-bootstrap.event-detail .is-sticky .sticky-goal,
+.no-bootstrap.fundraise .is-sticky .sticky-goal,
+.no-bootstrap.register-event .is-sticky .sticky-goal,
+.no-bootstrap.events .is-sticky #cf-form-sidebar,
+.no-bootstrap.event-detail .is-sticky #cf-form-sidebar,
+.no-bootstrap.fundraise .is-sticky #cf-form-sidebar,
+.no-bootstrap.register-event .is-sticky #cf-form-sidebar {
+  margin-top: 60px;
+}
+.no-bootstrap.events #navigation,
+.no-bootstrap.event-detail #navigation,
+.no-bootstrap.fundraise #navigation,
+.no-bootstrap.register-event #navigation {
+  top: 0;
+}
+.no-bootstrap.events #navigation + #marquee,
+.no-bootstrap.event-detail #navigation + #marquee,
+.no-bootstrap.fundraise #navigation + #marquee,
+.no-bootstrap.register-event #navigation + #marquee {
+  margin-top: 60px;
+}
+.no-bootstrap.events #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search #global-search-submit,
+.no-bootstrap.event-detail #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search #global-search-submit,
+.no-bootstrap.fundraise #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search #global-search-submit,
+.no-bootstrap.register-event #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search #global-search-submit {
+  min-width: 1px;
+}
+.no-bootstrap.profile.edit #navigation form {
+  width: auto;
+}
+.no-bootstrap.profile.edit #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search .separator {
+  height: 25px;
+}
+.no-bootstrap.search-results #navigation .wrapper,
+.no-bootstrap.search #navigation .wrapper {
+  zoom: 1;
+  padding-top: 0;
+}
+.no-bootstrap.search-results #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a,
+.no-bootstrap.search #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a {
+  background: $black;
+  color: $white;
+}
+.no-bootstrap.search-results #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a:hover,
+.no-bootstrap.search #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a:hover,
+.no-bootstrap.search-results #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a:focus,
+.no-bootstrap.search #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a:focus {
+  background: $white;
+  color: $black;
+}
+.no-bootstrap.get-help.main #navigation .wrapper,
+.no-bootstrap.get-help.theme #navigation .wrapper {
+  max-width: 976px;
+  min-width: 0;
+}
+.no-bootstrap.get-help.main #navigation .wrapper .wrapper__content,
+.no-bootstrap.get-help.theme #navigation .wrapper .wrapper__content {
+  margin-left: 0;
+  margin-right: 15px;
+}
+.no-bootstrap.get-help.article #navigation #logo {
+  max-width: 230px;
+  height: 60px;
+}
+.no-bootstrap.events #navigation #logo,
+.no-bootstrap.event-detail #navigation #logo,
+.no-bootstrap.add-profile #navigation #logo {
+  max-width: 230px;
+  height: 60px;
+}
+.no-bootstrap.events #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search,
+.no-bootstrap.event-detail #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search,
+.no-bootstrap.add-profile #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search {
+  margin: 15px 15px 0 0;
+}
+.no-bootstrap.events #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a,
+.no-bootstrap.event-detail #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a,
+.no-bootstrap.add-profile #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a {
+  background: $black;
+  color: $white;
+}
+.no-bootstrap.events #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a:hover,
+.no-bootstrap.event-detail #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a:hover,
+.no-bootstrap.add-profile #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a:hover,
+.no-bootstrap.events #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a:focus,
+.no-bootstrap.event-detail #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a:focus,
+.no-bootstrap.add-profile #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a:focus {
+  background: $white;
+  color: $black;
+}
+.no-bootstrap.cfgrid-view #navigation .wrapper {
+  max-width: 971px;
+}
+.no-bootstrap.cfgrid-view #navigation .wrapper .wrapper__content {
+  margin-right: 0;
+}
+.no-bootstrap.cfgrid-view #navigation #nav-utitlities .nav__tier--1 > li#global-login #global-login-form {
+  width: 194px;
+  left: -61px;
+}
+.no-bootstrap.cfgrid-view #navigation #nav-utitlities .nav__tier--1 > li#global-login #global-login-form .form-group .form-control.livestrong-input {
+  width: 87%;
+}
+.no-bootstrap.cfgrid-view #navigation #nav-utitlities .nav__tier--1 > li#global-login #global-login-form .form-group .livestrong-btn {
+  background: $yellow;
+}
+.no-bootstrap.cfgrid-view #navigation #nav-utitlities .nav__tier--1 > li#global-login #global-login-form .form-group .livestrong-btn:hover {
+  background: $black;
+}
+.no-bootstrap.cfgrid-view #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 {
+  width: 212px;
+  left: -61px;
+}
+.no-bootstrap.cfgrid-view #sticky-parent,
+.no-bootstrap.programs-resource__view #sticky-parent {
+  position: relative;
+  z-index: 19;
+}
+.no-bootstrap.cfgrid-view #navigation #logo,
+.no-bootstrap.programs-resource__view #navigation #logo {
+  max-width: 230px;
+  height: 60px;
+}
+.no-bootstrap.cfgrid-view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search,
+.no-bootstrap.programs-resource__view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search {
+  margin: 15px 0 0 0;
+}
+.no-bootstrap.cfgrid-view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search #global-search-submit,
+.no-bootstrap.programs-resource__view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search #global-search-submit {
+  min-width: 1px;
+}
+.no-bootstrap.cfgrid-view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.programs-resource__view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.cfgrid-view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.programs-resource__view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.cfgrid-view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search.focused .active-menu-obscure,
+.no-bootstrap.programs-resource__view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search.focused .active-menu-obscure {
+  left: -547px;
+}
+.no-bootstrap.cfgrid-view #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a,
+.no-bootstrap.programs-resource__view #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a {
+  background: $black;
+  color: $white;
+}
+.no-bootstrap.cfgrid-view #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a:hover,
+.no-bootstrap.programs-resource__view #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a:hover,
+.no-bootstrap.cfgrid-view #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a:focus,
+.no-bootstrap.programs-resource__view #navigation #nav-utitlities .nav__tier--1 > li#global-donate > a:focus {
+  background: $white;
+  color: $black;
+}
+.no-bootstrap.cfgrid-view #content.cfgrid-view__content #cfgrid-view__filters-sticky-wrapper.is-sticky #cfgrid-view__filters,
+.no-bootstrap.programs-resource__view #content.cfgrid-view__content #cfgrid-view__filters-sticky-wrapper.is-sticky #cfgrid-view__filters {
+  margin-top: 42px;
+}
+.no-bootstrap.programs-map__view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover .active-menu-obscure,
+.no-bootstrap.programs-map__view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:focus .active-menu-obscure,
+.no-bootstrap.programs-map__view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search.focused .active-menu-obscure {
+  left: -547px;
+}
+.no-bootstrap.programs-resource__view #navigation #logo {
+  max-width: 100%;
+}
+.no-bootstrap.programs-resource__view #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search {
+  margin: 15px 33px 0 0;
+}
+/* Bootstrap Pollyfills
+=========================================================== */
+.no-bootstrap #navigation .row {
+  clear: both;
+}
+.no-bootstrap #navigation .col-md-1 {
+  width: 8.33333333%;
+  float: left;
+}
+.no-bootstrap #navigation .col-md-2 {
+  width: 15%;
+  float: left;
+}
+.no-bootstrap #navigation .col-md-3 {
+  width: 25%;
+  float: left;
+}
+.no-bootstrap #navigation .col-md-4 {
+  width: 33.333333333%;
+  float: left;
+}
+.no-bootstrap #navigation .col-md-6 {
+  width: 50%;
+  float: left;
+}
+.no-bootstrap #navigation .col-md-8 {
+  width: 66.66666667%;
+  float: left;
+}
+.no-bootstrap #navigation .col-md-9 {
+  width: 75%;
+  float: left;
+}
+.no-bootstrap #navigation .glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.no-bootstrap #navigation .form-control-feedback {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  pointer-events: none;
+}
+.no-bootstrap #navigation .form-control {
+  display: block;
+  width: 87%;
+  height: 20px;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.12);
+  font-size: 1.125em;
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.no-bootstrap #navigation .has-error .form-control {
+  border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+}
+.no-bootstrap #navigation .has-success .form-control {
+  border-color: #3c763d;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+}
+.no-bootstrap #navigation .has-error .form-control-feedback {
+  color: #a94442;
+}
+.no-bootstrap #navigation .has-success .form-control-feedback {
+  color: #3c763d;
+}
+.no-bootstrap #navigation .glyphicon-remove:before {
+  content: "\f00d";
+  box-sizing: border-box;
+}
+.no-bootstrap #navigation .glyphicon-ok:before {
+  content: "\f00c";
+  box-sizing: border-box;
+}
+.no-bootstrap #navigation .text-right {
+  text-align: right;
+}
+.no-bootstrap #navigation .btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+.no-bootstrap #navigation .js-dropdown-trigger .js-toggle-subnav {
+  display: none;
+}
+.no-bootstrap #navigation .nav__tier--1 > li .nav__tier--2 .separator:before {
+  margin: 0 28px 0 21px;
+}
+.no-bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-login #global-login-form {
+  width: 207px;
+  left: -75px;
+}
+.no-bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-login .form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+.no-bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-login .form-group > ul > li {
+  margin-bottom: 0;
+  padding: 0;
+}
+.no-bootstrap #navigation .input-group-btn {
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+}
+.no-bootstrap #navigation .input-group-addon,
+.no-bootstrap #navigation .input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+@media (max-width: 1023px) {
+  body.bootstrap,
+  html.bootstrap {
+    min-width: 0;
+  }
+  .bootstrap .wrapper .wrapper__content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .bootstrap #navigation #nav-utitlities #global-search-container #global-search {
+    margin: 15px 18px 0 0;
+  }
+  .bootstrap #navigation #nav-utitlities #user-options .nav__tier--2 {
+    width: 181px;
+    left: -58px;
+    padding: 0;
+  }
+  .bootstrap #main-article #logo-mobile {
+    margin-left: 0;
+  }
+}
+@media (max-width: 992px) {
+  .bootstrap #navigation {
+    position: fixed;
+    z-index: 1;
+    width: 266px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transition-property: top, bottom;
+    transition-duration: 0.2s, 0.2s;
+    transition-timing-function: linear, linear;
+    -webkit-overflow-scrolling: touch;
+  }
+  .bootstrap #navigation .js-dropdown-trigger > .js-toggle-subnav {
+    width: 33%;
+    float: right;
+    padding: 15px 0;
+    display: block;
+  }
+  .bootstrap #navigation .js-dropdown-trigger > .js-toggle-subnav + a {
+    width: 66%;
+    float: left;
+    text-align: left;
+  }
+  .bootstrap #navigation .nav__tier--1 {
+    clear: both;
+  }
+  .bootstrap #navigation .nav__tier--1 > li {
+    clear: both;
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid rgba(112,112,112,0.3);
+  }
+  .bootstrap #navigation .nav__tier--1 > li > a {
+    line-height: 1.3;
+    height: auto;
+    float: left;
+    padding: 15px 0;
+    margin: 0;
+  }
+  .bootstrap #navigation .nav__tier--1 > li > a:hover,
+  .bootstrap #navigation .nav__tier--1 > li > a:focus {
+    background: transparent;
+  }
+  .bootstrap #navigation .nav__tier--1 > li .nav__tier--2 {
+    clear: both;
+    background: transparent;
+    position: static;
+    display: none;
+    padding: 0;
+    width: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .bootstrap #navigation .nav__tier--1 > li .nav__tier--2 .row {
+    max-width: 100%;
+  }
+  .bootstrap #navigation .nav__tier--1 > li .nav__tier--2 .nav__tier--2-container > ul {
+    width: 100%;
+    clear: both;
+  }
+  .bootstrap #navigation .nav__tier--1 > li .nav__tier--2 .nav__tier--2-container > ul > li {
+    clear: both;
+    margin: 0;
+    width: 100%;
+    padding-left: 1em;
+    border-top: 1px solid rgba(112,112,112,0.3);
+  }
+  .bootstrap #navigation .nav__tier--1 > li .nav__tier--2 .nav__tier--2-container > ul > li > a {
+    padding: 15px 0;
+    float: left;
+    margin: 0;
+  }
+  .bootstrap #navigation .nav__tier--1 > li .nav__tier--2 .nav__tier--3 {
+    clear: both;
+    width: 100%;
+    display: none;
+  }
+  .bootstrap #navigation .nav__tier--1 > li .nav__tier--2 .nav__tier--3 > li {
+    clear: both;
+    margin: 0;
+    width: 100%;
+    padding-left: 1em;
+    border-top: 1px solid rgba(112,112,112,0.3);
+  }
+  .bootstrap #navigation .nav__tier--1 > li .nav__tier--2 .nav__tier--3 > li > a {
+    padding: 15px 0;
+    margin: 0;
+    color: #000;
+  }
+  .bootstrap #navigation .nav__tier--1 > li:hover .nav__tier--2 {
+    display: none;
+  }
+  .bootstrap #navigation #logo,
+  .bootstrap #navigation #nav-links,
+  .bootstrap #navigation #nav-utitlities {
+    float: none;
+    padding: 0;
+    margin: 0 0 18px;
+    position: static;
+  }
+  .bootstrap #navigation #logo {
+    height: auto;
+  }
+  .bootstrap #navigation #logo .ls-logo-container {
+    margin: 10;
+  }
+  .bootstrap #navigation #logo .ls-logo-container a {
+    line-height: normal;
+  }
+  .bootstrap #navigation #logo .separator {
+    border-right: none;
+    padding: 0;
+    margin: 0;
+    height: auto;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-search-container {
+    position: relative;
+    border-top: none;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search {
+    margin: 0;
+    padding: 0;
+    border-left: none;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search #q {
+    display: inline;
+    position: static;
+    left: 0;
+    top: 0;
+    padding: 0 10px;
+    width: inherit;
+    opacity: 1;
+    visibility: visible;
+    vertical-align: middle;
+    transition: none;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search #global-search-submit:hover {
+    background: #000;
+    color: #fff;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover #q,
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search .search-focus #q {
+    width: auto;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search:hover #global-search-submit:hover,
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-search-container #global-search .search-focus #global-search-submit:hover {
+    background: #000;
+    color: #fff;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-search-container .input-group-btn {
+    width: 1%;
+    display: inline;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-login {
+    position: relative;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-login:hover > a,
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-login:focus > a {
+    background: transparent;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-login:hover #global-login-form,
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-login:focus #global-login-form {
+    display: none;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-login #global-login-form {
+    display: none;
+    clear: both;
+    position: static;
+    padding: 15px 12px 1px;
+    margin-bottom: 15px;
+    width: auto;
+    left: 0;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#user-options {
+    height: auto;
+    line-height: normal;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#user-options .generic-avatar {
+    margin: 9px 0 0;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 {
+    width: auto;
+    left: 0;
+    padding: 0;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .nav__tier--2-container > ul > li {
+    padding-left: 1em;
+    border-bottom: none;
+    border-top: 1px solid rgba(112,112,112,0.3);
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .nav__tier--2-container > ul > li#manage > a:before,
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .nav__tier--2-container > ul > li#message-center > a:before {
+    margin-right: 9px;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .nav__tier--2-container > ul > li#manage > a:before {
+    content: '\f234';
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .nav__tier--2-container > ul > li#message-center > a:before {
+    content: '\f003';
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#user-options .nav__tier--2 .nav__tier--2-container > ul > li > a {
+    color: #000;
+    padding: 15px 0;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-donate.js-dropdown-trigger {
+    background: transparent;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-donate.js-dropdown-trigger > a {
+    background: transparent;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-donate.js-dropdown-trigger > a:hover {
+    background: transparent;
+  }
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-donate.js-dropdown-trigger.active,
+  .bootstrap #navigation #nav-utitlities .nav__tier--1 > li#global-donate.js-dropdown-trigger:hover {
+    background: transparent;
+  }
+  .bootstrap #navigation #nav-links .nav__tier--1 > li > a {
+    text-align: left;
+  }
+  .bootstrap #navigation #nav-links .nav__tier--1 > li.active,
+  .bootstrap #navigation #nav-links .nav__tier--1 > li:hover {
+    background: transparent;
+  }
+  .bootstrap #main-article {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    background: #fff;
+  }
+  .bootstrap #main-article #logo-mobile {
+    width: 100%;
+    margin: 0;
+    z-index: 5;
+    padding: 18px 15px 0;
+  }
+}

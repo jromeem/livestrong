@@ -1,0 +1,19 @@
+.mission-statement {
+  padding: 6.825em 0 7.388em;
+}
+.mission-statement .mission-statement__content {
+  text-align: center;
+}
+.mission-statement .mission-statement__content h2 {
+  font-size: 2.25em;
+  line-height: 1.3;
+  text-align: center;
+  margin: 0 auto 33px;
+}
+.mission-statement .mission-statement__content .livestrong-border {
+  padding: 10px 20px;
+  border-color: $smoke;
+  text-align: center;
+  font-size: 1.125em;
+  margin: 0 auto;
+}
