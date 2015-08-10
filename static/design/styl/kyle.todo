@@ -1,0 +1,28 @@
+- change homepage content to what marketing provided
+	- https://livestrong.app.box.com/files/0/f/3942763795/1/f_33370795017
+- homepage: wrap challenge and solution within carousel
+- homepage: add margins between carousel items
+- homepage: make modals dynamic
+- homepage: write backbone event logic for modals
+	- popup and include source url
+- finish email sign up hooked with survey form
+	- finish styles for event states
+		- valid
+		- invalid
+	- test on staging if validation works -- I probably don't care if there are no emails
+- integrate Kyle's isolated environment with yours to include footer
+	- gonna take forever
+- mike's stuff (???)
+- other things
+	- Kyle's suggestions (email on Aug. 3):
+		- Some of these we may have already spoke about
+		- Need to add scss code for your footer in the sass folder
+		- Need to include the footer on the responsive_base.html file
+		- Add styles included to livestrong-develop frontend/styles/new/_redesign/partials/new_footer.styl to your - footer styles working branch.
+		- Don’t set exact heights on the footer content
+		- Make the colors you use stylus variables so it is easier to change them in the future.
+		- Include new_footer in responsive_base.html
+		- Do not use <p> tags inside of <address> tags
+		- The background image you set up for the big marquee area is 2MB. Please get it down in size.
+ 	- Sean's (email on Aug. 5):
+		- footer QA in email

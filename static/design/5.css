@@ -1,0 +1,80 @@
+.section-4__out-impact {
+  background-color: #fffdf4;
+  padding-top: 80px;
+  padding-bottom: 138px;
+}
+.section-4__out-impact h1 {
+  padding: 0;
+  margin: 0;
+}
+.section-4__out-impact .impacts #impact-item-1 {
+  margin-bottom: 115px;
+}
+.section-4__out-impact .impacts #impact-item-1 .impact-item__left {
+  height: 212px;
+  width: 395px;
+  background: url("/static/design/images/baby-stroller.png") no-repeat center;
+}
+.section-4__out-impact .impacts #impact-item-2 {
+  margin-bottom: 115px;
+}
+.section-4__out-impact .impacts #impact-item-2 .impact-item__left {
+  height: 187px;
+  padding-left: 20px;
+  width: 345px;
+  margin-right: 50px;
+  background: url("/static/design/images/hold-hands.png") no-repeat center;
+}
+.section-4__out-impact .impacts #impact-item-3 .impact-item__left {
+  height: 150px;
+  padding-left: 10px;
+  width: 345px;
+  margin-right: 50px;
+  background: url("/static/design/images/workout.png") no-repeat center;
+}
+.section-4__out-impact .impacts .impact-item {
+  width: 100%;
+}
+.section-4__out-impact .impacts .impact-item .impact-item__left {
+  margin: 0;
+  padding-top: 30px;
+  float: left;
+  display: inline-block;
+  font-size: 100px;
+  line-height: 120px;
+  color: #fdcb30;
+  text-align: center;
+  font-family: 'Libel Suit', 'Helvetica', sans-serif;
+}
+.section-4__out-impact .impacts .impact-item .impact-item__right {
+  margin: 0;
+  width: 400px;
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 150px;
+  line-height: 24px;
+  color: #616365;
+}
+.section-4__out-impact .impacts .impact-item .impact-item__right .impact-item__right-button {
+  margin-top: 25px;
+  text-decoration: none;
+}
+.section-4__out-impact .impacts .impact-item .impact-item__right .impact-item__right-button .fa-angle-right {
+  color: #b1b3b5;
+}
+.section-4__out-impact .impacts .impact-item .impact-item__right .impact-item__right-button a {
+  border: 1px solid #b1b3b5;
+  border-radius: 3px;
+  padding: 9px 20px;
+  font-size: 20px;
+  color: #1a1919;
+  font: 20px 'Sentinel A', 'Sentinel B', 'Sentinel-Book' serif;
+}
+.section-4__out-impact .impacts .impact-item .impact-item__right .impact-item__right-button a:hover {
+  cursor: pointer;
+  background-color: #000;
+  border: 1px solid #000;
+  transition: all 300ms ease-out 0s;
+  text-decoration: none;
+  color: #fff;
+}

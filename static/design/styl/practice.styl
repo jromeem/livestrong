@@ -1,0 +1,123 @@
+// practice
+debug-width = 600px			// default
+// debug-width = 400px		// device tiny: phones
+// debug-width = 768px		// device small: tablets
+// debug-width = 992px		// device medium: desktops
+// debug-width = 1200px		// device large: large desktops
+
+html {
+	height 100%
+	font-family 'Arial', 'Helvetica', sans-serif
+	background-color #ccc
+}
+
+body {
+	margin 0 auto
+	width debug-width
+	background-color #fff
+}
+
+.debug-title {
+	background-color #ffd
+	font-size 18px
+	width 100%
+	text-align center
+}
+
+// ref: http://www.quirksmode.org/css/clearing.html
+.highlight {
+	overflow: hidden;	// clear fix
+	width: 100%			// clear fix
+	background-color #fcfcfc
+}
+
+////////////
+// BADGES //
+////////////
+
+badge-icon-size = 120px
+
+// image - content
+.badge-right {
+	margin 20px 0px
+	min-height badge-icon-size
+	.badge-side {
+		float left
+	}
+	.badge-main {
+		margin-left 140px
+	}
+	.full-width {
+		margin-left 0px
+		width 100%
+	}
+}
+
+// content - image
+.badge-left {
+	margin 20px 0px
+	min-height badge-icon-size
+	.badge-side { 
+		float right
+	}
+	.badge-main {
+		margin-right 140px
+	}
+	.full-width {
+		margin-right 0px
+	}
+}
+
+.badge-side {
+	// background-color #cef
+	width badge-icon-size
+	padding 0px 10px 
+	.badge-icon {
+		height badge-icon-size
+		width badge-icon-size
+		background-position top
+		border-radius 100%
+	}
+}
+
+.badge-main {
+	// background-color #cfe
+	display table-cell
+	vertical-align middle
+	height badge-icon-size  // acts as min-height for using display:table-cell
+	padding 0px 10px 10px 10px
+	.badge-header {
+		margin 0
+		font-size 20px
+		font-weight bold
+	}
+	.badge-snippet {
+		font-size 16px
+		font-weight 100
+		margin 5px 10px 10px 0px
+	}
+	.badge-link {
+		font-size 14px
+		color #000
+		text-decoration none
+	}
+}
+
+/////////////
+// COLUMNS //
+/////////////
+
+#rrow {
+	width 100%
+	.col-4 {
+		display block
+	    height 200px
+	    width 100/3
+	    display inline-block
+	    // border 1px solid #000
+	    background-color #fec
+	}
+}
+
+
+

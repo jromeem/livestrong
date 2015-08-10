@@ -1,0 +1,11 @@
+.section-2__manifesto {
+  text-align: center;
+  background-color: #fffdf4;
+  padding: 30px 0px;
+}
+.section-2__manifesto h2 {
+  color: #616365;
+  margin: 0;
+  padding: 0;
+  font: 34px 'Sentinel A', 'Sentinel B', 'Sentinel-Book', serif;
+}

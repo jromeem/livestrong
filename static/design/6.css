@@ -1,0 +1,109 @@
+.section-5__get-involved {
+  position: relative;
+  padding: 80px 0px;
+  background-color: #fffdf4;
+  background: url("/static/design/images/wristband_bg.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-box-shadow: inset 0px -170px 100px -120px #fffdf4;
+  -moz-box-shadow: inset 0px -170px 100px -120px #fffdf4;
+  -o-box-shadow: inset 0px -170px 100px -120px #fffdf4;
+  box-shadow: inset 0px -170px 100px -120px #fffdf4;
+}
+.section-5__get-involved h1,
+.section-5__get-involved h2,
+.section-5__get-involved h3,
+.section-5__get-involved h4 {
+  font-family: 'Sentinel A', 'Sentinel B', 'Sentinel-Book' serif;
+}
+.section-5__get-involved h1 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.section-5__get-involved .impact-item {
+  margin-bottom: 150px;
+}
+.section-5__get-involved .impact-item .impact-item__left {
+  padding-right: 170px;
+}
+.section-5__get-involved .impact-item .impact-item__left h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.section-5__get-involved .impact-item .impact-item__left p {
+  font-size: 18px;
+}
+.section-5__get-involved .impact-item .impact-item__left .paypal-button {
+  border: 1px solid #979797;
+  vertical-align: bottom;
+}
+.section-5__get-involved .impact-item .impact-item__left .donate-button {
+  border: 1px solid #fdcb30;
+  background-color: #fdcb30;
+}
+.section-5__get-involved .impact-item .impact-item__left .impact-item__event-list {
+  width: 423px;
+}
+.section-5__get-involved .impact-item .impact-item__left .impact-item__event-list ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.section-5__get-involved .impact-item .impact-item__left .impact-item__event-list li {
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.section-5__get-involved .impact-item .impact-item__left .impact-item__event-list .impact-item__event-list-event .event-list__event-col {
+  width: 206px;
+  display: inline-block;
+}
+.section-5__get-involved .impact-item .impact-item__left .impact-item__event-list .impact-item__event-list-event .event-list__event-col a {
+  text-decoration: none;
+  color: #333;
+}
+.section-5__get-involved .impact-item .impact-item__left .impact-item__event-list .impact-item__event-list-event .event-list__event-col i.fa-angle-right {
+  color: #616365;
+}
+.section-5__get-involved .impact-item .impact-item__left .impact-item__event-list .impact-item__event-list-event .event-list__date-col {
+  width: 137px;
+  display: inline-block;
+}
+.section-5__get-involved .impact-item .impact-item__left .impact-item__event-list .impact-item__event-list-event .event-list__register-col {
+  width: 70px;
+  display: inline-block;
+}
+.section-5__get-involved .impact-item .impact-item__left .impact-item__event-list .impact-item__event-list-event .event-list__register-col a {
+  text-decoration: none;
+  color: #616365;
+}
+.section-5__get-involved .impact-item .impact-item__right {
+  text-align: right;
+}
+.section-5__get-involved .impact-item .impact-button {
+  margin-top: 18px;
+  margin-right: 20px;
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #b1b3b5;
+  text-decoration: none;
+  padding: 9px 20px;
+  font-size: 20px;
+  color: #1a1919;
+  font: 20px 'Sentinel A', 'Sentinel B', 'Sentinel-Book' serif;
+}
+.section-5__get-involved .impact-item .impact-button:hover {
+  cursor: pointer;
+  background-color: #000;
+  border: 1px solid #000;
+  transition: all 300ms ease-out 0s;
+  text-decoration: none;
+  color: #fff;
+}
+.section-5__get-involved .impact-item img {
+  width: 402px;
+  height: 264px;
+  border-radius: 4px;
+}
